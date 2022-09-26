@@ -69,9 +69,9 @@ public class Pvr_UnitySDKEyeManager : MonoBehaviour
         go.transform.parent = transform;
         go.AddComponent<Camera>().enabled = true;
 #if !UNITY_5
-    if (GetComponent<GUILayer>() != null) {
+    /*if (GetComponent<GUILayer>() != null) {
       go.AddComponent<GUILayer>();
-    }
+    }*/
     if (GetComponent("FlareLayer") != null) {
       go.AddComponent<FlareLayer>();
     }
